@@ -125,3 +125,4 @@ class InvoiceService:
         if status is not None:
             return self.invoice_repo.list_by_status(status, skip=skip, limit=limit)
         return self.invoice_repo.list(skip=skip, limit=limit)
+

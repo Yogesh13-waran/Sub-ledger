@@ -59,3 +59,4 @@ def get_ledger_by_reference(
 ) -> List[LedgerEntryResponse]:
     entries = service.get_by_reference_id(reference_id)
     return [LedgerEntryResponse.model_validate(e) for e in entries]
+

@@ -65,3 +65,4 @@ def test_payment_attempt_and_ledger_repr():
         description="Payment test",
     )
     assert repr(ledger) == "<LedgerEntry id=99 type='payment_success' amount=50.00 ref='ref_123'>"
+

@@ -75,3 +75,4 @@ class Invoice(Base, TimestampMixin):
 
     def __repr__(self) -> str:
         return f"<Invoice id={self.id} sub_id={self.subscription_id} due={self.amount_due} paid={self.amount_paid} status='{self.status}'>"
+

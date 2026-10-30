@@ -207,3 +207,4 @@ python-subledger/
 For an exhaustive, file-by-file breakdown of every design choice, SOLID principles analysis, and billing interview preparation questions, see:
 - [DESIGN.md](DESIGN.md): Low-Level Design (LLD) specification with Mermaid diagrams.
 - [CONCEPTS_AND_ARCHITECTURE_DEEP_DIVE.md](CONCEPTS_AND_ARCHITECTURE_DEEP_DIVE.md): Masterclass educational guide covering all architectural concepts in deep detail.
+

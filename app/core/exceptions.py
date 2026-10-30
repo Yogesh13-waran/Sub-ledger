@@ -65,3 +65,4 @@ class InvoiceAlreadyPaidException(BusinessRuleViolationException):
             f"Invoice {invoice_id} is already fully paid. No further payments can be accepted.",
             {"invoice_id": invoice_id}
         )
+

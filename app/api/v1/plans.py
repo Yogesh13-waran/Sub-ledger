@@ -65,3 +65,4 @@ def update_plan(
 ) -> PlanResponse:
     plan = service.update_plan(plan_id, data)
     return PlanResponse.model_validate(plan)
+

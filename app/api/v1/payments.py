@@ -49,3 +49,4 @@ def list_payments_for_invoice(
 ) -> List[PaymentAttemptResponse]:
     attempts = service.list_payment_attempts(invoice_id)
     return [PaymentAttemptResponse.model_validate(a) for a in attempts]
+

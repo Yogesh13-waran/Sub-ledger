@@ -29,11 +29,12 @@ Base = declarative_base()
 def get_db() -> Generator[Session, None, None]:
     """
     FastAPI dependency that yields a SQLAlchemy database session per request.
-    Ensures safe session lifecycle: rollback on unhandled error, close on completion.
+    Ensures safe session lifecycle: commit on success, rollback on error, close on completion.
     """
     db = SessionLocal()
     try:
         yield db
+        db.commit()
     except Exception:
         db.rollback()
         raise
@@ -45,3 +46,4 @@ def init_db() -> None:
     """Creates all database tables defined on Base metadata."""
     import app.models  # Ensure all models are registered with Base metadata # noqa
     Base.metadata.create_all(bind=engine)
+

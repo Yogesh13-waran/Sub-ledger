@@ -72,3 +72,4 @@ def test_ledger_repository_append_only_enforcement(db_session: Session):
     with pytest.raises(BusinessRuleViolationException) as exc_info:
         repo.delete(created)
     assert "append-only" in str(exc_info.value).lower()
+

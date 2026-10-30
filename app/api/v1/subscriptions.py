@@ -70,3 +70,4 @@ def cancel_subscription(
 ) -> SubscriptionResponse:
     sub = service.cancel_subscription(subscription_id)
     return SubscriptionResponse.model_validate(sub)
+

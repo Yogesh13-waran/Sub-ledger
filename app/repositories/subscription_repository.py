@@ -44,3 +44,4 @@ class SubscriptionRepository(BaseRepository[Subscription]):
             .limit(limit)
         )
         return list(self.db.scalars(stmt).all())
+

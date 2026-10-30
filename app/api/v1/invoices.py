@@ -63,3 +63,4 @@ def get_invoice(
 ) -> InvoiceResponse:
     invoice = service.get_invoice(invoice_id)
     return InvoiceResponse.model_validate(invoice)
+

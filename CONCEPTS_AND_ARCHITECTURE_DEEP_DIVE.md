@@ -452,3 +452,4 @@ Here are the top questions asked in Staff / Senior Backend engineering interview
 ### Q4: "How does your architecture support multi-gateway redundancy (e.g. Stripe + Razorpay fallback)?"
 **Answer**:
 "Because `PaymentService` depends on domain abstractions rather than gateway SDKs, payment gateways are treated as external providers. Route handlers or adapter workers normalize gateway webhooks into a standard `PaymentCreateRequest` containing `amount`, `currency`, `provider_reference`, and `status`. The payment attempt repository records the provider reference for idempotency, and the invoice status reconciles identically regardless of which gateway processed the charge."
+

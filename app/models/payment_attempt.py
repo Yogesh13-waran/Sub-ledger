@@ -38,3 +38,4 @@ class PaymentAttempt(Base):
 
     def __repr__(self) -> str:
         return f"<PaymentAttempt id={self.id} invoice_id={self.invoice_id} amount={self.amount} status='{self.status}'>"
+

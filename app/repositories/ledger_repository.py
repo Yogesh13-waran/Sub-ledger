@@ -53,3 +53,4 @@ class LedgerRepository(BaseRepository[LedgerEntry]):
             .order_by(LedgerEntry.created_at.asc())
         )
         return list(self.db.scalars(stmt).all())
+

@@ -15,3 +15,4 @@ class LedgerEntryResponse(BaseSchema):
     reference_id: str
     description: str
     created_at: datetime
+

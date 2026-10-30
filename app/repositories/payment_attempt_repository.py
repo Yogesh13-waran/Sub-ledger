@@ -25,3 +25,4 @@ class PaymentAttemptRepository(BaseRepository[PaymentAttempt]):
         """Lookup payment attempt by gateway reference ID (for idempotency checks)."""
         stmt = select(PaymentAttempt).where(PaymentAttempt.provider_reference == provider_reference.strip())
         return self.db.scalars(stmt).first()
+

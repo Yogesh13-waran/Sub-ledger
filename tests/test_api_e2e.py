@@ -159,3 +159,4 @@ def test_complete_billing_lifecycle_e2e(client: TestClient):
     assert "invoice_created" in entry_types
     assert "payment_failure" in entry_types
     assert "payment_success" in entry_types
+

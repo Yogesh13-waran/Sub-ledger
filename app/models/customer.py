@@ -36,3 +36,4 @@ class Customer(Base, TimestampMixin):
 
     def __repr__(self) -> str:
         return f"<Customer id={self.id} email='{self.email}'>"
+

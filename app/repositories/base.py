@@ -46,3 +46,4 @@ class BaseRepository(Generic[T]):
         """Remove an entity instance from database."""
         self.db.delete(entity)
         self.db.flush()
+

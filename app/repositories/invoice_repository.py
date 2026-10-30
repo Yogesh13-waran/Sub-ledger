@@ -42,3 +42,4 @@ class InvoiceRepository(BaseRepository[Invoice]):
             .limit(limit)
         )
         return list(self.db.scalars(stmt).all())
+

@@ -28,3 +28,4 @@ class Plan(Base, TimestampMixin):
 
     def __repr__(self) -> str:
         return f"<Plan id={self.id} name='{self.name}' price={self.price} active={self.is_active}>"
+

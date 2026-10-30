@@ -47,3 +47,4 @@ class LedgerEntry(Base):
 
     def __repr__(self) -> str:
         return f"<LedgerEntry id={self.id} type='{self.entry_type}' amount={self.amount} ref='{self.reference_id}'>"
+

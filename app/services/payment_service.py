@@ -142,3 +142,4 @@ class PaymentService:
     def list_payment_attempts(self, invoice_id: int) -> List[PaymentAttempt]:
         """Fetch all payment attempts recorded for an invoice."""
         return self.payment_attempt_repo.list_by_invoice(invoice_id)
+

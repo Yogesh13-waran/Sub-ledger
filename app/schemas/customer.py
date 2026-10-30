@@ -23,3 +23,4 @@ class CustomerResponse(BaseSchema):
     email: str
     created_at: datetime
     updated_at: datetime
+

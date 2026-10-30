@@ -19,3 +19,4 @@ class PlanRepository(BaseRepository[Plan]):
             .limit(limit)
         )
         return list(self.db.scalars(stmt).all())
+

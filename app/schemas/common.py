@@ -22,3 +22,4 @@ class PaginatedResponse(BaseModel, Generic[T]):
 class BaseSchema(BaseModel):
     """Base Pydantic model with from_attributes configured for SQLAlchemy ORM conversion."""
     model_config = ConfigDict(from_attributes=True)
+

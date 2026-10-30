@@ -49,6 +49,10 @@ def client(db_session: Session) -> Generator[TestClient, None, None]:
     def override_get_db():
         try:
             yield db_session
+            db_session.commit()
+        except Exception:
+            db_session.rollback()
+            raise
         finally:
             pass
 
@@ -116,3 +120,4 @@ def sample_subscription(db_session: Session, sample_customer: Customer, sample_p
     db_session.commit()
     db_session.refresh(sub)
     return sub
+

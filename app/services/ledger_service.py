@@ -66,3 +66,4 @@ class LedgerService:
     def get_by_reference_id(self, reference_id: str) -> List[LedgerEntry]:
         """Fetch audit log for a specific transaction reference."""
         return self.ledger_repo.list_by_reference_id(reference_id)
+

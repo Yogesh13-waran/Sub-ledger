@@ -323,3 +323,4 @@ stateDiagram-v2
 | **Invoice status moves to paid / partially_paid** | `PaymentService` | State transition logic comparing updated `amount_paid` to `amount_due` |
 | **Failed payment does not increase amount_paid** | `PaymentService` | Explicit branch: only persist `PaymentAttempt` and emit `payment_failure` ledger event |
 | **Append-only traceable ledger** | `LedgerRepository` & `LedgerService` | Explicit disallowing of `update` and `delete` in repository; `reference_id` indexing on each event |
+

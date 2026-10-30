@@ -14,3 +14,4 @@ class CustomerRepository(BaseRepository[Customer]):
         """Fetch customer by case-insensitive email."""
         stmt = select(Customer).where(Customer.email.ilike(email.strip()))
         return self.db.scalars(stmt).first()
+

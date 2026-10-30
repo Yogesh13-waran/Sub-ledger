@@ -42,3 +42,4 @@ class Subscription(Base, TimestampMixin):
 
     def __repr__(self) -> str:
         return f"<Subscription id={self.id} customer_id={self.customer_id} plan_id={self.plan_id} status='{self.status}'>"
+

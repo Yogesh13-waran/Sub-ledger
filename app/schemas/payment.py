@@ -47,3 +47,4 @@ class PaymentResultResponse(BaseSchema):
     """Schema returned by payment service containing attempt and updated invoice status."""
     payment_attempt: PaymentAttemptResponse
     invoice: InvoiceResponse
+

@@ -64,3 +64,4 @@ def update_customer(
 ) -> CustomerResponse:
     customer = service.update_customer(customer_id, data)
     return CustomerResponse.model_validate(customer)
+

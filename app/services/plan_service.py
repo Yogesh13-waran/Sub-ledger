@@ -65,3 +65,4 @@ class PlanService:
             plan.is_active = data.is_active
 
         return self.plan_repo.update(plan)
+

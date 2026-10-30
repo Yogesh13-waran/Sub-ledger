@@ -105,3 +105,4 @@ class SubscriptionService:
         subscription.status = SubscriptionStatus.CANCELLED
         subscription.cancelled_at = utc_now()
         return self.subscription_repo.update(subscription)
+
